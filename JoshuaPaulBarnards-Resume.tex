@@ -9,7 +9,7 @@
 % Developed on Windows 10, coded in TeXstudio, and compiled using MikTex.
 % 
 % This resume can be downloaded from:
-%  https://github.com/JoshuaPaulBarnard
+%  https://github.com/JoshuaPaulBarnard/resume
 %
 % Author:
 %  Joshua Paul Barnard <JoshuaPaulBarnard@gmail.com>
@@ -20,8 +20,6 @@
 %
 % Template license:
 %  MIT (https://mit-license.org/)
-
-
 
 %---------------------- Required Formatting -----------------------
 \documentclass[a4paper, 11pt]{article}
@@ -159,15 +157,16 @@
 \newcolumntype{C}{>{\centering\arraybackslash}X}%
 %--------- End of Packages and Formatting ----------
 
+
+
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%
 %%%%%% DEFINE ELEMENTS HERE %%%%%%%
 \newcommand{\name}{Joshua Paul Barnard} % Your Name
-\newcommand{\course}{ (Remove This 4) } % Your Program
-\newcommand{\roll}{ (Remove This 3) } % Your Roll No.
+
 \newcommand{\phone}{(707) 809 - 5409} % Your Phone Number
 \newcommand{\emaila}{JoshuaPaulBarnard@gmail.com} %Email 1
-\newcommand{\emailb}{Add Youtube, ResearchGate, and Tableau profile links} %Email 2
+\newcommand{\emailb}{JoshuaPaulBarnard.com} %Email 2
 
 
 
@@ -178,16 +177,14 @@
 	
 	
 	\parbox{2.35cm}{%
-		\includegraphics[width=2cm,clip]{NITW_LOGO.png}
+		\includegraphics[width=2cm,clip]{LOGO.png}
 	}
 	\parbox{\dimexpr\linewidth-2.8cm\relax}{
-		\begin{tabularx}{\linewidth}{L r} \\
-			\textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +1 \phone}\\
-			{Roll No.: \roll} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
-			\course &  \href{mailto:\emailb}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emailb}}\\
-			{ (Remove This 1) } &  \href{https://yourGithubProfile.com/}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}} \\
-			{ (Remove This 2) (Make Vertical) } & \href{https://www.yourLinkedinProfile.com/in/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn Profile}}
-		\end{tabularx}
+	\begin{tabularx}{\linewidth}{L r} \\
+		\textbf{\Large \name} &  \href{https://JoshuaPaulBarnard.com}{\raisebox{0.0\height}{\footnotesize \faGlobe}\ {Portfolio Website}}\\
+		{ Northern California } &  \href{https://github.com/JoshuaPaulBarnard}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}} \\
+		{ JoshuaPaulBarnard@gmail.com } & \href{https://www.linkedin.com/in/joshua-paul-barnard/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn}}
+	\end{tabularx}
 	}
 	% \parbox{3.0cm}{%
 		% \flushright \includegraphics[width=2cm,clip]{nitp_logo.png}
@@ -200,33 +197,45 @@
 	\section{\textbf{Education}}
 	\resumeSubHeadingListStart
 	\resumeSubheading
-	{Johns Hopkins University, Whiting School of Engineering}{GPA: 4.0}
-	{Masters of Science:  Data Science}{2025}
+	{Johns Hopkins University, Whiting School of Engineering}{}
+	{Masters of Science:  Data Science}{2026}
 	\resumeSubheading
-	{Humboldt State University}{GPA: 3.1}
+	{Humboldt State University}{}
 	{Bachelors of Art:  Psychology}{2016}
 	\resumeSubheading
-	{Santa Rosa Junior College}{GPA: 3.4}
+	{Santa Rosa Junior College}{}
 	{Associates of Science:  Computer Science}{2018}
 	\resumeSubheading
-	{Cornell University, eCornell}{GPA: N/A}
+	{Cornell University, eCornell}{}
 	{Certificate:  Data Analytics}{2017}
 	\resumeSubHeadingListEnd
 	\vspace{-5.5mm}
-	%
+	%---------------------------------
 	
 	
 	
 	%-----------EXPERIENCE-----------------
 	\section{\textbf{Experience}}
 	\resumeSubHeadingListStart
+	
 	\resumeSubheading
-	{HomeSpun Lodging}{Fort Bragg, CA}
+	{Omniworld UK}{London, UK}
+	{Lead Developer}{2023 - Present}
+	\vspace{-1.0mm}
+	\resumeItemListStart
+	\item {Developing the Crown Blockchain based on Cryptonote, written in C++ and using Github.}
+	\item {Integrating The Crown Coin with Phone App and banking API to provide The Crown Card.}
+	\resumeItemListEnd
+	
+	\vspace{-3.0mm}
+	
+	\resumeSubheading
+	{Sequoidea Properties LLC}{Fort Bragg, CA}
 	{Property Manager}{2020 - Present}
 	\vspace{-1.0mm}
 	\resumeItemListStart
-	\item {Performing regular Maintenance and Handling the Tenants requests.}
-	\item {Ensuring Compliance with all Safety, County \& State regulations, while providing Security.}
+	\item {Performing Regular Maintenance, Handling Tenants Needs,  Accounting, and Ensuring Legal Compliance.}
+	\item {Responsibilities range from plumping, logging, and construction, to accounting, research, and systems networking.}
 	\resumeItemListEnd
 	
 	\vspace{-3.0mm}
@@ -236,8 +245,8 @@
 	{Instructor \& Tutor}{2022}
 	\vspace{-1.0mm}
 	\resumeItemListStart
-	\item {Curriculum Development, Syllabus Creation, Classroom Management.}
-	\item {Tutor in Mathematics, and Instructor in Computer Science and also in Digital Arts \& Media.}
+	\item {Computer Science Instructor:  Curriculum Development, Syllabus Creation, Classroom Management.}
+	\item {Tutor in Mathematics and Statistics, assisted with Hybrid Classrooms using Zoom Cart.}
 	\resumeItemListEnd
 	
 	\vspace{-3.0mm}
@@ -260,14 +269,25 @@
 	\section{\textbf{Projects}}
 	\resumeSubHeadingListStart
 	
-		\resumeProject
+	\resumeProject
 	{Predicting Wine Quality by comparing Linear Regression with Machine Learning Techniques.} %Project Name
 	{The Johns Hopkins University} %Location, authors, etc
 	{2022} %Event Dates
 	
 	\resumeItemListStart
-	\item {We compared Linear Regression with Machine Learning Algorithms k-Nearest Neighbors, Decision Tree and Random Forest to Predict the Quality of Wine from Portugal, with Bayesian Inference in Python.}
+	\item {Various techniques were used to predict the perceived quality of wine based on physio-chemical properties.}
 	\item {Tools Used:  Python, Jupyter, NumPy, Pandas, Seaborn, OBS}
+	\resumeItemListEnd
+	\vspace{-2mm}
+	
+	\resumeProject
+	{SNAP Cats Website Redesign} %Project Name
+	{Santa Rosa Junior College} %Location, authors, etc
+	{2018} %Event Dates
+	
+	\resumeItemListStart
+	\item {Project Manager using Agile software development practices, using Slack and Trello. }
+	\item {Designed and developed a modern responsive website for a local non-profit using Wordpress(.org).}
 	\resumeItemListEnd
 	\vspace{-2mm}
 	
@@ -277,18 +297,8 @@
 	{2015} %Event Dates
 	
 	\resumeItemListStart
-	\item {The 16-item Health-Efficacy Scale for College Students (HESCS) assesses an individual’s belief in their capacity to change their own health.  }
+	\item {16-item scale developed to assesses an individual’s belief in their capacity to change their own health.  }
 	\item {Examined the psychometric properties of the HESCS by reliability and validity in SPSS with a sample of 104.}
-	\resumeItemListEnd
-	\vspace{-2mm}
-	
-	\resumeProject
-	{Examination of Perfectionism and Body Esteem on the Eating Patterns of College Students} %Project Name
-	{Humboldt State University (Cal Poly Humboldt)} %Location, authors, etc
-	{2014} %Event Dates
-	
-	\resumeItemListStart
-	\item {Exploring the effects of body-esteem and perfectionism on ones risk of having patterns of disturbed eating and the dieting differences between male and female college students, using SPSS with a sample of 66.}
 	\resumeItemListEnd
 	\vspace{-2mm}
 	
@@ -296,20 +306,19 @@
 	\vspace{-5.5mm}
 	
 	
-	
 	%-----------Technical skills-----------------
 	\section{\textbf{Technical Skills and Interests}}
 	\begin{itemize}[leftmargin=0.05in, label={}]
 		\small{\item{
-				\textbf{Developer Tools}{: } R, Python, SQL, Linux, Java, C++, HTML5, CSS3, JavaScript, PHP, Git, Lisp, TeX, Solidity.\\
-				\textbf{Frameworks}{: } TensorFlow, Pandas, Jupyter, RMarkdown, Knitr, Shiny, jQuery, ReactJS, NextJS, NodeJS, D3.js\\
-				\textbf{Cloud/Databases}{: } AWS Cloud, Microsoft Azure, MySQL, NoSQL, SQLite, MongoDB.\\
-				\textbf{Soft Skills}{: } Project Management, Problem-solving, Adaptability, Attention to Detail, Communication \& Creativity.\\
-				\textbf{Coursework}{: } Regression \& Statistical Modeling, Data Science, Psychometrics, Calculus, Predictive Data Analysis.\\
-				\textbf{Programs}{: } Tableau, Microsoft Excel, SPSS,  \\
-				\textbf{Languages}{: } English (Native), Chinese \& Japanese (Learning).\\
-				\textbf{Areas of Expertise}{: } Analytics, Web Development, Data Science \\
-				\textbf{Areas of Interest}{: } Research, Blockchain Development, Artificial Intelligence\\
+				\textbf{Developer Tools}{: }{ }{ }{ }{ } R, Python, SQL, Linux, Java, TeX, Git, Solidity, Rust, PHP, CSS3, HTML5, C++, JavaScript.\\
+				\textbf{Frameworks}{: }{ }{ }{ }{ }{ }{ }{ }{ } TensorFlow, Pandas, Scrapy, Phaser.js, Next.js, Angular, React, D3.js NodeJS. \\
+				\textbf{Cloud/Databases}{: }{ }{ }{ } AWS, Google Cloud, Microsoft Azure, MySQL, NoSQL, SQLite, MongoDB.\\
+				\textbf{Coursework}{: }{ }{ }{ }{ }{ }{ }{ }{ } Statistical Modeling, Data Science, Psychometrics, Calculus, Predictive Data Analysis.\\
+				\textbf{Programs}{: }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ }  Excel, Trello, Tableau, SPSS, Visual Studio Code, Jupyter Notebook, Photoshop, Wordpress.  \\
+				\textbf{Soft Skills}{: }{ }{ }{ }{ }{ }{ }{ }{ }{ }{ } Project Management, Attention to Detail, Problem-solving, Adaptability \& Creativity.\\
+				\textbf{Experience}{: }{ }{ }{ }{ }{ }{ }{ }{ }{ } Linux Server Administration, Agile Scrum Leader, Education, PC repair tech, IT Support.\\
+				\textbf{Areas of Expertise}{: }{ } Web Development, Data Science, Analytics, Management, Tutoring. \\
+				\textbf{Subjects of Interest}{: } Research, Blockchain Development, Artificial Intelligence.\\
 		}}
 	\end{itemize}
 	\vspace{-16pt}
@@ -337,14 +346,14 @@
 	\resumeSubHeadingListStart
 	
 	\resumePOR{Eagle Scout,  } % Award
-		{   Boy Scouts of America, Troop 37.} % Event
+	{   Boy Scouts of America, Troop 37.} % Event
 	%{   Earned over 45 Merit Badges \& Restored Braille Trail in County Park.} % Event
-		{2004} %Event Year
-
+	{2004} %Event Year
+	
 	\resumeSubHeadingListEnd
 	\vspace{-5mm}
-	
-	
-	
-	%-------------------------------------------
+
+
+
+%-------------------------------------------
 \end{document}
