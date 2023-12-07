@@ -1,0 +1,144 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% Joshua Paul Barnard's LaTeX Cover Letter
+%
+% Developed on Windows 10, coded and compiled using TeXstudio 4.7.1 and MikTex 23.10, 8678.
+% 
+% This resume can be downloaded from:
+%  https://github.com/JoshuaPaulBarnard/resume
+%
+% Author:
+%  Joshua Paul Barnard <JoshuaPaulBarnard@gmail.com>
+%
+% References:
+%  Awesome CV <github.com/posquit0/Awesome-CV>
+%
+% Template license:
+%  MIT (https://mit-license.org/)
+
+%	NOTE:
+%		You may get warnings or errors while compiling, but check the source folder and the pdf should be created.
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-emerald}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{profile}
+\name{Joshua P.}{Barnard}
+\position{Computer Technician{\enskip\cdotp\enskip}Developer}
+\address{29890 State Highway 20, Fort Bragg, California, USA}
+
+\mobile{(+1) 707-809-5409} 
+\email{JoshuaPaulBarnard@gmail.com} 
+\homepage{www.JoshuaPaulBarnard.com} 
+% \github{JoshuaPaulBarnard}
+% \linkedin{JoshuaPaulBarnard}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+\quote{"Science is more than a body of knowledge. It is a way of thinking."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+{Mendocino Unified School District}
+{44141 Little Lake Road  \\PO Box 1154\\Mendocino, CA 95460}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Computer Support Technician}
+% How the letter is opened
+\letteropening{Dear Mendocino Unified School District,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Résumé}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+	
+	% Print the header with above personal informations
+	% Give optional argument to change alignment(C: center, L: left, R: right)
+	\makecvheader[R]
+	
+	% Print the footer with 3 arguments(<left>, <center>, <right>)
+	% Leave any of these blank if they are not needed
+	\makecvfooter
+	{\today}
+	{Joshua P Barnard~~~·~~~Cover Letter}
+	{}
+	
+	% Print the title with above letter informations
+	\makelettertitle
+	
+	%-------------------------------------------------------------------------------
+	%	LETTER CONTENT
+	%-------------------------------------------------------------------------------
+	\begin{cvletter}
+		
+		\lettersection{About Me}
+		During my high school years I was home-schooled and attended the Santa Rosa Junior College as part of the High School Enrichment Program.  I started by taking the beginning computer courses were I met fellow students who hired me to tutor them about computers, then to repair and build their computers.   Since then I have continued working on computers as both a hobby and a side-job.  After graduating from my undergraduate program I returned to the SRJC to study computer architecture and programming, allowing me to have a deeper understanding of computers and how they function. 
+		
+		\lettersection{Why Mendocino Unified School District?}
+		Thou I am from Santa Rosa, my immediate family is from Fort Bragg, and the entire Northern California Coast from San Francisco to Oregon.  I have always felt a strong connection to the people, cultures and landscapes of this wondrous corner of our World.
+		Mendocino has given me the opportunity to expand my skill-sets and grow as a person, and I want to return these gifts by helping the local community and people with my skills and abilities.
+		
+		\lettersection{Why Me?}
+		I have a deep passion for learning, believing that education is apart of our life's journey and that we should never stop growing.  That helping others is the best way for us to use our knowledge to contribute back to society.  I enjoy the process of solving problems through research and critical thinking, and would enjoy the opportunity to help my local community with Mendocino Unified School District.
+		
+	\end{cvletter}
+	
+	
+	%-------------------------------------------------------------------------------
+	% Print the signature and enclosures with above letter informations
+	\makeletterclosing
+	
+\end{document}
